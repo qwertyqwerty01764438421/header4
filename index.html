@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- cdnjs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header4.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoo"><a href="" class="logo">SI<span>YAM</span></a>
+            </div>
+            <div class="nav_links" id="nav_links">
+                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+            <ul >
+                
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">Work</a></li>
+            </ul>
+            
+            </div>
+            <!-- OPENMENU -->
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            <div class="contact">
+                <a href="#" ><button class="btn1">CONTACT US </button></a>
+            <a href="mailto:qq5309227@gmail.com" class="btn2">qq5309227@gmail.com</a>
+        </div>
+            
+        </nav>
+    </header>
+
+    <script>
+        const nav_links=document.getElementById("nav_links");
+        function openmenu(){
+            nav_links.style.right="0";
+        }
+        function hidemenu(){
+            nav_links.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
